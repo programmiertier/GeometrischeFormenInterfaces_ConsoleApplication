@@ -33,10 +33,5 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
             WriteLine("Name: {0}, Form: {1}", name, form);
         }
 
-        public void Hier(int x, int y)
-        {
-            SetCursorPosition(x, y);
-            WriteLine();
-        }
     }
 }
