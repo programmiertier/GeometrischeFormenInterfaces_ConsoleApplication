@@ -42,7 +42,6 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
             // komischerKeks.EineForm("Ein bisschen verschobenes Rechteck... ned so genau schauen, bitte");
             Kreis neuerKreis = new Kreis();
             neuerKreis.AllesAnzeigen("Kreis", "rund", 5, 7);
-
             ReadLine();
         }
     }

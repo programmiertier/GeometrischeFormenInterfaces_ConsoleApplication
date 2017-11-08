@@ -12,8 +12,6 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
         protected static int x;
         protected static int y;
 
-        
-
         public void HierBinIch(string name)
         {
             
@@ -32,6 +30,5 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
             SetCursorPosition(x, y);
             WriteLine("Name: {0}, Form: {1}", name, form);
         }
-
     }
 }
