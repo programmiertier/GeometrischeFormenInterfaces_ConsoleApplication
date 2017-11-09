@@ -8,9 +8,9 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
     class Kreis : Ellipse
     {
-        /* public Kreis(int x, int y) : base (x,y)
+        public Kreis(int x, int y) : base (x,y)
         {
 
-        }   */
+        }
     }
 }

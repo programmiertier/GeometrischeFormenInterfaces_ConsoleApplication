@@ -7,9 +7,9 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
     public class Dreieck : Figur
     {
-        /* public Dreieck(int x, int y) : base (x,y)
+        public Dreieck(int x, int y) : base (x,y)
         {
 
-        }   */
+        }
     }
 }

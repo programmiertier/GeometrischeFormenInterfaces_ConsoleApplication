@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
-    public class Quadrat : Rechteck
-    {
-        public Quadrat(int x, int y) : base(x, y)
+        public class Viereck : Figur
         {
+            public Viereck(int x, int y) : base(x, y)
+            {
 
+            }
         }
-
-        /* public Rechteck(int x, int y) : base (x,y)
-        {
-
-        }   */
     }
-}

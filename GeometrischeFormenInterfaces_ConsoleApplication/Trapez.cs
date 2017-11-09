@@ -7,6 +7,12 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
     public class Trapez : Rechteck
     {
+        
+            public Trapez(int x, int y) : base(x, y)
+            {
+
+            }
+
         /* public Trapez(int x, int y) : base (x,y)
         {
 

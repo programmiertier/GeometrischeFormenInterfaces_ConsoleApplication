@@ -7,9 +7,9 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
     public class Ellipse : Figur
     {
-        /* public Ellipse(int x, int y) : base (x,y)
+        public Ellipse(int x, int y) : base (x,y)
         {
 
-        }   */
+        }
     }
 }

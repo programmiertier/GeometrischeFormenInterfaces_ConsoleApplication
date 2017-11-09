@@ -7,10 +7,20 @@ using static System.Console;
 
 namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
-    public class Figur : IAnzeige
+    public class Figur : IAnzeige, IVerschiebbar
     {
+
+        protected KeyValuePair<int, int> mittelpunkt;
+        protected double umfang;
+        protected double flaeche;
         protected static int x;
         protected static int y;
+
+        public Figur(int x, int y)
+        {
+            // Console.WriteLine("Figur wird bei {0},{1} erzeugt ",x,y);
+            mittelpunkt = new KeyValuePair<int, int>(x, y);
+        }
 
         public void HierBinIch(string name)
         {
@@ -29,6 +39,59 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
         {
             SetCursorPosition(x, y);
             WriteLine("Name: {0}, Form: {1}", name, form);
+        }
+
+        public KeyValuePair<int, int> Mittelpunkt
+        {
+            get
+            {
+                return mittelpunkt;
+            }
+
+            set
+            {
+                mittelpunkt = value;
+            }
+        }
+
+        public double Umfang
+        {
+            get
+            {
+                return umfang;
+            }
+
+            set
+            {
+                umfang = value;
+            }
+        }
+
+        public double Flaeche
+        {
+            get
+            {
+                return flaeche;
+            }
+
+            set
+            {
+                flaeche = value;
+            }
+        }
+
+        public bool AnzeigeFlaechenÜberwachung(int x, int y)
+        {
+            throw new NotImplementedException();
+        }
+
+        public KeyValuePair<int, int> Verschieben(int x_delta, int y_delta)
+        {
+            SetCursorPosition(this.Mittelpunkt.Key, this.Mittelpunkt.Value);
+            WriteLine("                                                  ");
+            return new KeyValuePair<int, int>(this.Mittelpunkt.Key + x_delta, this.Mittelpunkt.Value + y_delta);
+
+
         }
     }
 }

@@ -7,6 +7,11 @@ namespace GeometrischeFormenInterfaces_ConsoleApplication
 {
     public class Rechteck : Figur
     {
+        public Rechteck(int x, int y) : base(x, y)
+            {
+
+        }
+
         /* public Rechteck(int x, int y) : base (x,y)
         {
 

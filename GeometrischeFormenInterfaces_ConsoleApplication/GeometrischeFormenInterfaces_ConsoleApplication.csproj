@@ -53,6 +53,7 @@
     <Compile Include="Quadrat.cs" />
     <Compile Include="Rechteck.cs" />
     <Compile Include="Trapez.cs" />
+    <Compile Include="Viereck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
